@@ -23,7 +23,7 @@ public class Loader : MonoBehaviour
     // This should represent the data you're expecting from the platform.
     // Most games are expecting 2 types of data, Start and Language.
     LoLDataType _expectedData = LoLDataType.START | LoLDataType.LANGUAGE;
-
+    public Dictionary<string, string> dataDictionary = new Dictionary<string, string>();
     [System.Flags]
     enum LoLDataType
     {
